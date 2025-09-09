@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Network Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div class="container">
+        <h1>Wi-Fi Network Scanner</h1>
+    <button id="scanBtn">Scan Networks</button>
+    <div id="currentSpeed" class="speed-section">
+        <h2>Current Network Speed</h2>
+        <div id="speedInfo">Loading...</div>
+    </div>
+        <div id="networkCount" style="margin:15px 0; font-weight:bold;"></div>
+        <table id="results">
+            <thead>
+                <tr><th>SSID</th><th>Signal Strength</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="loading" style="display:none;">Scanning...</div>
+    </div>
+
+    <footer style="position:fixed; left:0; bottom:0; width:100%; text-align:center; background:rgba(255,255,255,0.85); color:#020202; font-size:1rem; padding:10px 0; z-index:1000; box-shadow:0 -2px 8px rgba(0,0,0,0.04);">
+        Created by @Rishika Patel
+    </footer>
+    <script src="/static/app.js"></script>
+</body>
+</html>
